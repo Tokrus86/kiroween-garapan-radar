@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Garapan Radar — Airdrop Safety Scanner</title>
+<meta name="description" content="Scan a BSC token contract before you ape in. Safety Score 0-100 from DexScreener + GoPlus data. Free, no account, no backend.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>👻 Garapan Radar</h1>
+  <p class="tagline">Airdrop Safety Scanner — paste a BSC contract, get a verdict.</p>
+</header>
+<main>
+  <section id="scanner" aria-label="Token scanner">
+    <label for="contract">BSC contract address</label>
+    <input id="contract" type="text" inputmode="text" autocomplete="off"
+           spellcheck="false" placeholder="0x...">
+    <button id="scan" type="button">Scan</button>
+    <p id="error" role="alert" hidden></p>
+  </section>
+  <section id="result" aria-live="polite" hidden></section>
+  <section id="ledger" aria-label="Garapan ledger">
+    <h2>Garapan Ledger</h2>
+    <p>Your airdrop tasks, stored only in this browser.</p>
+    <ul id="tasks"></ul>
+  </section>
+</main>
+<footer>
+  <p>Built with Kiro for Kiroween 2026 (Frankenstein). Data: DexScreener + GoPlus. No backend, no keys, no tracking.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

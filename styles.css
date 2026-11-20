@@ -1,0 +1,41 @@
+/* Garapan Radar — dark "haunted" theme (scaffold, Day 1). Full polish on Day 9-10. */
+:root {
+  --bg: #0d0f14;
+  --surface: #161a23;
+  --text: #e8eaf0;
+  --muted: #9aa3b2;
+  --accent: #7c5cff;
+  --safe: #2fbf71;
+  --warn: #f5a623;
+  --danger: #e5484d;
+  --border: #2a3040;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+header, main, footer { max-width: 720px; margin: 0 auto; padding: 1rem; }
+h1 { margin: 0.25rem 0; }
+.tagline { color: var(--muted); margin: 0; }
+label { display: block; margin-bottom: 0.35rem; font-weight: 600; }
+input, button { font: inherit; padding: 0.6rem 0.75rem; border-radius: 8px; }
+input {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  margin-bottom: 0.6rem;
+}
+button {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+button:hover { filter: brightness(1.1); }
+#error { color: var(--danger); }
+footer { color: var(--muted); font-size: 0.85rem; }

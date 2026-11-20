@@ -1,0 +1,7 @@
+# Garapan Radar — .gitignore
+# NOTE: .kiro/ is DELIBERATELY NOT ignored — Kiroween rules require /.kiro
+# in the repo root as proof of Kiro usage. Never add .kiro/ here.
+
+node_modules/
+.DS_Store
+*.log
